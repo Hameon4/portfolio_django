@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+
+    <div id="home">
+        <div class="landing-text">
+            <h1>WELCOME TO MY WEBSITE</h1>
+            <h5> My Most Recent Website Built via Django</h5>
+        </div>
+    </div>
+
+    <div id="home2">
+            <div class="landing-text2">
+                <h2>My Progress Status</h2><br>
+                <p class="text-fluid">
+                    A year has passed since I started my full stack web development journey. <br>
+                    <strong>Main Goal:</strong> Achieve Full Stack Knowledge<br>
+                    <strong>2021:</strong> Spent more time on <i>Python & Django</i><br>
+                </p>
+                <h3>2020:</h3>
+                <p class="text-fluid">
+                    Focused on Frontend Development <br>
+                    Learned <i>HTML + CSS + JS</i> & and little bit on Python + Django<br>
+                </p>
+                <h3>2021:</h3>
+                <p class="text-fluid">
+                    Focused more on Backend Development and on Bootstrap <br>
+                    Used Python and the Django Framework.
+                </p>
+
+                <a href="{% url 'about' %}"><button type="button" class="btn btn-warning btn-lg">More About Me</button></a>
+            </div>
+        </div>
+
+    <!-- IMAGE SLIDER start-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/frontend2.png'%}" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/bootstrap.png' %}" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/pljxaxmkio021.png' %}" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'images/python-django.jpeg' %}" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- IMAGE SLIDER end-->
+    <br><br>
+
+
+{% endblock %}

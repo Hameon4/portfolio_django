@@ -1,0 +1,44 @@
+html, body {
+    background: linear-gradient(rgba(0.1,0.1,0.1,0.1), rgba(0.1,0.1,0.1,0.1));
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding: .8rem;
+    background-color: #302F2F;
+    font-size: 1.2em;
+}
+
+.navbar-brand {
+    min-height: 55px;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: lightgreen;
+}
+
+.navbar-expand-md .navbar-nav li a {
+    color: lightgreen;
+}
+
+.navbar-expand-md .navbar-nav li a:hover, .navbar-expand-md .navbar-nav li a.active {
+    color: white;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+footer {
+    background: #434442;
+}
+
+.footer-copyright {
+    color: white;
+    min-height: 80px;
+}
