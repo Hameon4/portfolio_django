@@ -16,6 +16,7 @@ html, body {
 .navbar-brand {
     min-height: 55px;
     color: white;
+    padding-top: 10px;
 }
 
 .navbar-brand:hover {
@@ -28,6 +29,11 @@ html, body {
 
 .navbar-expand-md .navbar-nav li a:hover, .navbar-expand-md .navbar-nav li a.active {
     color: white;
+}
+
+.navbar button {
+    background-color: grey;
+    color: lightgrey;
 }
 
 .navbar-nav li {
