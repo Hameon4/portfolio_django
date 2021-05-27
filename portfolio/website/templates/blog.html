@@ -2,7 +2,8 @@
 {% block title %}My Blog{% endblock %}
 
 {% block content %}
-    <h1>Post</h1>
+    <h1>Post</h1><br>
+    <a href="{% url 'add_post' %}" class="btn btn-secondary">Add Blog Post</a>
 
     <ul>
     {% for post in object_list %}
