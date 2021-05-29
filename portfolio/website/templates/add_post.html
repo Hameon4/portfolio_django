@@ -4,14 +4,16 @@
 {% block content %}
     <div class="container">
         <div class="form-group">
-            <br><h1>Add Post...</h1>
-            <form method="POST">
+            <h1>Add Post...</h1>
+            <br><br>
+
+            <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
+                <button class="btn btn-secondary">Post</button><a href="{% url 'blog' %}" class="btn btn-secondary">Back</a>
             </form>
-            <button type="submit" class="btn btn-secondary">Post</button>
-            <a href="{% url 'blog' %}" class="btn btn-secondary">Back</a>
         </div>
     </div>
-    <br>
+
+
 {% endblock %}
