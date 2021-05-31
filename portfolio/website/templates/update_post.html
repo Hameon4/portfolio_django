@@ -2,6 +2,7 @@
 {% block title %}Edit Blog Post{% endblock %}
 
 {% block content %}
+    {% if user.is_authentiated %}
     <div class="container">
         <div class="form-group">
             <h1>Update Post...</h1>
@@ -15,6 +16,9 @@
             </form>
         </div>
     </div>
+    {% else %}
+     You are not logged in!
+    {% endif %}
 
 
 {% endblock %}
