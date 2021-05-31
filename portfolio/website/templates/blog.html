@@ -3,16 +3,18 @@
 
 {% block content %}
     <h1>Post</h1><br>
-    <a href="{% url 'add_post' %}" class="btn btn-secondary">Add Blog Post</a>
+    <a href="{% url 'add_post' %}" class="btn btn-secondary">Add Blog Post</a><br>
+    <a href="{% url 'register' %}" class="btn btn-secondary">Register</a><br>
+    <a href="{% url 'login' %}" class="btn btn-secondary">Login</a><br>
 
     <ul>
     {% for post in object_list %}
         <li>
-            <a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }}
-            {{ post.author.last_name }} - {{ post.post_date }}
+            <a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> -
+            {{ post.author.first_name }} {{ post.author.last_name }} - {{ post.post_date }}
             <small>
-                <a href="{% url 'update_post' post.pk%}">Edit</a>
-                <a href="{% url 'delete_post' post.pk%}">Delete</a>
+                (<a href="{% url 'update_post' post.pk%}">Edit</a> -
+                <a href="{% url 'delete_post' post.pk%}">Delete</a>)
             </small>
             <br>
             {{ post.body }}

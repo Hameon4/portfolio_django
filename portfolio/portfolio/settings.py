@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'members',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +124,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'website/static')
 ]
+
+# The below two lines are for user athentication purposes and url redirection
+LOGIN_REDIRECT_URL = 'blog'
+LOGOUT_REDIRECT_URL = 'blog'
 
 
 # Default primary key field type
