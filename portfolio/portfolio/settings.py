@@ -126,8 +126,8 @@ STATICFILES_DIRS = [
 ]
 
 # The below two lines are for user athentication purposes and url redirection
-LOGIN_REDIRECT_URL = 'blog'
-LOGOUT_REDIRECT_URL = 'blog'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 
 
 # Default primary key field type
