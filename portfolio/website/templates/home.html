@@ -43,28 +43,18 @@
         <div class="landing-text2">
             <div class="container-fluid padding">
                 <div class="row padding">
+                    <div class="col-lg-6 me_image">
+                        <img src="{% static 'images/me.JPG' %}" class="img-fluid">
+                    </div>
                     <div class="col-md-12 col-lg-6">
-                        <h2>Who Am I</h2>
+                        <h2>Biography</h2>
                         <p>
-                            <strong>Name:</strong> Hamad Alsheraifi<br>
-                            <strong>Education:</strong> UAE University<br>
-                            <strong>Degree:</strong> Bacherlor's degree in Computer Engineering
-                        </p>
-                        <h3>Some Computer-related Interests:</h3>
-                        <p>
-                            <strong>Web Development</strong><br>
-                            <strong>Typing</strong>
-                        </p>
-                        <h3>Tools in Web Dev</h3>
-                        <p>
-                            <strong>Frontend:</strong> HTML, CSS, Bootstrap, JS<br>
-                            <strong>Backend:</strong> Django/Python
+                            Hamad is a fresh graduate from UAE university with an earned bacherlor's degree of <br>
+                            computer engineering. In his leisure time, he enjoys learning web development and has <br>
+                            a keen interest in the Python language, because of its wide range and ease of use.
                         </p>
                         <br>
                         <a href="{% url 'about' %}"><button type="button" class="btn btn-warning btn-lg">More About Me</button></a>
-                    </div>
-                    <div class="col-lg-6 me_image">
-                        <img src="{% static 'images/me.JPG' %}" class="img-fluid">
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
     background: linear-gradient(rgba(0.8,0.8,0.8,0.8), rgba(0.8,0.8,0.8,0.8)), url('/static/images/pljxaxmkio021.jpeg') center center fixed;
     opacity: 1;
     display: table;
-    height: 80%;
+    /*height: 80%;*/
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
@@ -43,8 +43,6 @@
     text-align: center;
     vertical-align: middle;
     color: white;
-    padding-bottom: 200px;
-    padding-top: 50px;
 }
 
 .landing-text2 button {
@@ -58,8 +56,9 @@
 }
 
 .me_image img {
-    height: 60%;
-    position: relative;
-    width: 65%;
+    height: 70%;
+    opacity: 0.75;
+    /*position: relative;*/
+    width: 70%;
     background-size: cover;
 }
