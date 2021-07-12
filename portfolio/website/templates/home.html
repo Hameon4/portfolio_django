@@ -15,28 +15,61 @@
         </div>
     </div>
 
-    <div id="home2">
-            <div class="landing-text2">
-                <h2>My Progress Status</h2><br>
-                <p class="text-fluid">
-                    A year has passed since I started my full stack web development journey. <br>
-                    <strong>Main Goal:</strong> Achieve Full Stack Knowledge<br>
-                    <strong>2021:</strong> Spent more time on <i>Python & Django</i><br>
-                </p>
-                <h3>2020:</h3>
-                <p class="text-fluid">
-                    Focused on Frontend Development <br>
-                    Learned <i>HTML + CSS + JS</i> & and little bit on Python + Django<br>
-                </p>
-                <h3>2021:</h3>
-                <p class="text-fluid">
-                    Focused more on Backend Development and on Bootstrap <br>
-                    Used Python and the Django Framework.
-                </p>
+<!--    <div id="home2">-->
+<!--            <div class="landing-text2">-->
+<!--                    <h2>My Progress Status</h2><br>-->
+<!--                    <p class="text-fluid">-->
+<!--                        A year has passed since I started my full stack web development journey. <br>-->
+<!--                        <strong>Main Goal:</strong> Achieve Full Stack Knowledge<br>-->
+<!--                        <strong>2021:</strong> Spent more time on <i>Python & Django</i><br>-->
+<!--                    </p>-->
+<!--                    <h3>2020:</h3>-->
+<!--                    <p class="text-fluid">-->
+<!--                        Focused on Frontend Development <br>-->
+<!--                        Learned <i>HTML + CSS + JS</i> & and little bit on Python + Django<br>-->
+<!--                    </p>-->
+<!--                    <h3>2021:</h3>-->
+<!--                    <p class="text-fluid">-->
+<!--                        Focused more on Backend Development and on Bootstrap <br>-->
+<!--                        Used Python and the Django Framework.-->
+<!--                    </p>-->
+<!--    -->
+<!--                    <a href="{% url 'about' %}"><button type="button" class="btn btn-warning btn-lg">More About Me</button></a>-->
+<!--            </div>-->
+<!--        </div>-->
 
-                <a href="{% url 'about' %}"><button type="button" class="btn btn-warning btn-lg">More About Me</button></a>
+    <!--Two column-->
+    <div id="home2">
+        <div class="landing-text2">
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-12 col-lg-6">
+                        <h2>Who Am I</h2>
+                        <p>
+                            <strong>Name:</strong> Hamad Alsheraifi<br>
+                            <strong>Education:</strong> UAE University<br>
+                            <strong>Degree:</strong> Bacherlor's degree in Computer Engineering
+                        </p>
+                        <h3>Some Computer-related Interests:</h3>
+                        <p>
+                            <strong>Web Development</strong><br>
+                            <strong>Typing</strong>
+                        </p>
+                        <h3>Tools in Web Dev</h3>
+                        <p>
+                            <strong>Frontend:</strong> HTML, CSS, Bootstrap, JS<br>
+                            <strong>Backend:</strong> Django/Python
+                        </p>
+                        <br>
+                        <a href="{% url 'about' %}"><button type="button" class="btn btn-warning btn-lg">More About Me</button></a>
+                    </div>
+                    <div class="col-lg-6 me_image">
+                        <img src="{% static 'images/me.JPG' %}" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
     <!-- IMAGE SLIDER start-->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

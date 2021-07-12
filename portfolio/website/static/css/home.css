@@ -48,11 +48,18 @@
 }
 
 .landing-text2 button {
-    margin-top: 100px;
+    margin-top: 20px;
     background-color: #21540A;
     color: white;
 }
 
 .landing-text2 button:hover {
     background-color: orange;
+}
+
+.me_image img {
+    height: 60%;
+    position: relative;
+    width: 65%;
+    background-size: cover;
 }
