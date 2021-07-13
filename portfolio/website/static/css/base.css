@@ -11,7 +11,7 @@ html, body {
 .navbar {
     padding: .8rem;
     /*background-color: #302F2F;*/
-    background-color: #573862;
+    background-color: #3E2746;
     font-size: 1.2em;
 }
 
@@ -43,7 +43,7 @@ html, body {
 }
 
 footer {
-    background: #573862;
+    background: #3E2746;
 }
 
 .footer-copyright {
