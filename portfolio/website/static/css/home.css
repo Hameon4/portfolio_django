@@ -56,9 +56,11 @@
 }
 
 .me_image img {
-    height: 70%;
-    opacity: 0.75;
-    /*position: relative;*/
-    width: 70%;
-    background-size: cover;
+    height: 100%;
+    filter: brightness(60%);
+    width: 60%;
+}
+
+.carousel-inner img{
+    filter: brightness(40%);
 }
