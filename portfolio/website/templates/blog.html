@@ -22,7 +22,7 @@
                                 {{ post.author.last_name }} | {{ post.post_date }}</h6>
                             <p class="card-text">{{ post.body|slice:":100"|safe }}</p>
                             <a href="{% url 'article-detail' post.pk %}" class="card-link"><button
-                                    class="btn btn-primary">Read More</button></a>
+                                    class="btn btn-info">Read More</button></a>
                           </div>
                         </div>
                     </div>
