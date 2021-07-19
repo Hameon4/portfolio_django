@@ -1,33 +1,32 @@
 {% extends 'base.html' %}
 {% block title %}My Blog{% endblock %}
+{% load static %}
 
 {% block content %}
-    <h1>Post</h1><br>
-<!--    {% if user.is_authenticated %}-->
-<!--        <a href="{% url 'add_post' %}" class="btn btn-secondary float-right">Add Blog Post</a><br>-->
-<!--        <a href="{% url 'logout' %}" class="btn btn-secondary">Logout</a><br>-->
-<!--    {% else %}-->
-<!--        <a href="{% url 'register' %}" class="btn btn-secondary">Register</a><br>-->
-<!--        <a href="{% url 'login' %}" class="btn btn-secondary">Login</a><br>-->
-<!--    {% endif %}-->
-
-    <ul>
-    {% for post in object_list %}
-        <li>
-            <a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> -
-            {{ post.author.first_name }} {{ post.author.last_name }} - {{ post.post_date }}
-
-            {% if user.is_authenticated %}
-                <small>
-                    (<a href="{% url 'update_post' post.pk%}">Edit</a> -
-                    <a href="{% url 'delete_post' post.pk%}">Delete</a>)
-                </small>
-            {% endif %}
-
-            <br>
-            {{ post.body|slice:":100"|safe }}
-        </li>
-    {% endfor %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+          <h1>Welcome to My Blog</h1>
+      </li>
     </ul>
+    <br>
+
+    <div class="row">
+    {% for post in object_list %}
+                <div class="col-lg-6">
+                    <div class="card" style="width: 30rem;">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ post.author.first_name }}
+                            {{ post.author.last_name }} | {{ post.post_date }}</h6>
+                        <p class="card-text">{{ post.body|slice:":100"|safe }}</p>
+                        <a href="{% url 'article-detail' post.pk %}" class="card-link"><button
+                                class="btn btn-primary">Read More</button></a>
+                      </div>
+                    </div>
+                </div>
+        <br>
+    {% endfor %}
+    </div>
 
 {% endblock %}

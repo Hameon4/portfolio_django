@@ -1,0 +1,10 @@
+.nav {
+    padding: 3rem;
+    /*background-color: #302F2F;*/
+    background-color: #B7950B;
+    font-size: 1.2em;
+}
+
+.nav h1 {
+    color: white;
+}
