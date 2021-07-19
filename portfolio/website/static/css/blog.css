@@ -28,3 +28,8 @@
 .shadow h5, p {
     color: white;
 }
+
+.shadow .edit, .delete {
+    text-align: right;
+    color: lightblue;
+}
