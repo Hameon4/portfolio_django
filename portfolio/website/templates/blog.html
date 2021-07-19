@@ -21,8 +21,15 @@
                             <h6 class="card-subtitle mb-2 text-muted">{{ post.author.first_name }}
                                 {{ post.author.last_name }} | {{ post.post_date }}</h6>
                             <p class="card-text">{{ post.body|slice:":100"|safe }}</p>
-                            <a href="{% url 'article-detail' post.pk %}" class="card-link"><button
+                            {% if user.is_authenticated %}
+                              <a href="{% url 'article-detail' post.pk %}" class="card-link"><button
                                     class="btn btn-info">Read More</button></a>
+                              <a href="{% url 'update_post' post.pk %}">Edit</a> -
+                              <a href="{% url 'delete_post' post.pk %}">Delete</a>
+                            {% else %}
+                              <a href="{% url 'article-detail' post.pk %}" class="card-link"><button
+                                    class="btn btn-info">Read More</button></a>
+                            {% endif %}
                           </div>
                         </div>
                     </div>
