@@ -11,31 +11,34 @@ html, body {
 .navbar {
     padding: .8rem;
     /*background-color: #302F2F;*/
-    background-color: #3E2746;
+    background-color: #F9E79F;
     font-size: 1.2em;
 }
 
 .navbar-brand {
     min-height: 55px;
-    color: white;
+    color: black;
     padding-top: 10px;
 }
 
 .navbar-brand:hover {
-    color: lightgreen;
+    color: red;
 }
 
 .navbar-expand-md .navbar-nav li a {
-    color: lightgreen;
+    color: darkred;
+    transition: transform 0.3s;
 }
 
 .navbar-expand-md .navbar-nav li a:hover, .navbar-expand-md .navbar-nav li a.active {
-    color: white;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 .navbar button {
-    background-color: grey;
-    color: lightgrey;
+    background-color: black;
+    color: #F9E79F;
 }
 
 .navbar-nav li {
