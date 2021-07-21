@@ -1,5 +1,6 @@
 #home {
-    background: linear-gradient(rgba(0.2,0.2,0.2,0.2), rgba(0.2,0.2,0.2,0.2)), url('/static/images/website-design-background.png') center center fixed;
+    background: linear-gradient(rgba(0.2,0.2,0.2,0.2), rgba(0.2,0.2,0.2,0.2)),
+    url('/static/images/website-design-background.png') center center fixed;
     opacity: 1;
     display: table;
     height: 100%;
