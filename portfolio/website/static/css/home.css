@@ -76,7 +76,7 @@
 
 /* Blog CSS */
 #home3 {
-    background: linear-gradient(rgba(0.6,0.6,0.6,0.6), rgba(0.6,0.6,0.6,0.6)),
+    background: linear-gradient(rgba(0.5,0.5,0.5,0.5), rgba(0.5,0.5,0.5,0.5)),
     url('/static/images/website-design-background.png') center center fixed;
     opacity: 1;
     display: table;
