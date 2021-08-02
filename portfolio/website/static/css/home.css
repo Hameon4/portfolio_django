@@ -153,3 +153,26 @@
         top: 80px;
     }
 }
+
+/*Button Scroll up*/
+.buttons a button{
+  text-decoration: none;
+}
+#btnScrollUp {
+  position: fixed; /*As we scroll down the page, it's gonna float on top of all the content*/
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); /*Gotta check what this means*/
+  color: white;
+  outline: none; /*Need to look at this*/
+  cursor: pointer;
+  border: none;
+}
+
+#btnScrollUp:active { /*active sudo class*/
+  background: darkgreen;
+}
